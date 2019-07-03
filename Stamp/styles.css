@@ -1,0 +1,249 @@
+html{
+  font-family: roboto, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  min-width: 450px;
+}
+/* *{
+  border: none !important;
+} */
+body{
+  background: rgb(47, 46, 46);
+  background-image: url("Images/temp-office-space-chicago.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 100%;
+}
+header{
+  padding-bottom: 50px;
+}
+#logo a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  width: 80px;
+  float: left;
+  margin: 10px 0 0 20px;
+  
+}
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: block;
+}
+.clearfix:after{
+    clear: both;   
+}
+#mobile-menu{
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 40px;
+  z-index: 999;
+  background-image: url("Images/mobile-menu.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  float: right;
+}
+.hidden{
+  display: none;
+}
+nav{
+  float: right;
+  text-justify: center;
+  align-content: center;
+  width: 500px;
+  height: 20px;
+  cursor: pointer;
+}
+nav ul li{
+  float: left;
+  list-style-type: none;
+  padding: 0 15px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px rgb(76, 76, 76);
+}
+h1{
+  font-size: 44px;
+  text-transform: capitalize;
+}
+h4{
+font-size: 22px;
+text-transform: uppercase;
+margin-bottom: 10px;
+text-align: center;
+}
+p.info{
+  color: #000000;
+  font-size: 18px;
+  text-shadow: 0px 0px 2px #4b98e6;
+  text-align: center;
+  font-size: 14px;
+}
+p.info a{
+  color: #fff;
+  text-shadow: none;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px #000;
+}
+main{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 200px;
+  clear: both;
+}
+.content{
+  margin-top: 10px;
+}
+.copy{
+  float: left;
+  width: 40%;
+}
+.form-wrap{
+  float: right;
+  width: 40%;
+}
+.copy, .form-wrap{
+  /* min-width: 200px; */
+}
+
+input, button{
+  float: left;
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, .3);
+  padding-left: 15px;
+}
+button{
+  background: #4b98e6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+button span{
+ font-weight: 200;
+}
+input{
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+input::placeholder{
+  color: #fff;
+}
+input:focus{
+  color: #fff;
+  font-size: 24px;
+}
+input:valid{
+  color: #fff;
+  font-size: 24px;
+}
+input:not(:focus){
+  color: #fff;
+  font-size: 18px;
+}
+/* input:nth-child(4){
+  border: none;
+} */
+form{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+}
+/* .border{
+  border: 1px solid red;
+} */
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footernav-wrap{
+  /* position: absolute;
+  bottom: 27px;
+  right: 20px; */
+  margin-bottom: 45px;
+}
+.footernav-wrap nav ul li a{
+text-transform: uppercase;
+font-size: 14px;
+}
+.copyright{
+  position: absolute;
+  width: 300px;
+  bottom: 10px;
+  left: 20px;
+}
+
+@media only screen and (max-width: 867px){
+  .main-nav ul{
+    display: none;
+  }
+  .hidden{
+    display: block;
+  }
+  .main-nav{
+    display: block;
+  }
+  .mobile-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    margin: 10px 100px 0 0;
+  }
+  #mobile-menu{
+    display: block;
+  }
+  #mobile-menu:hover + nav.main-nav ul{
+    display: block;
+    width: 100%;
+    list-style-type: none;
+  }
+  .copy, .form-wrap{
+    float: none;
+    width: 100%;
+  }
+  h1{
+    margin-top: -100px;
+  }
+  .copyright{
+    width: 100%;
+    text-align: center;
+    float: none;
+    padding-right: 10px;
+    
+  }
+  .footernav-wrap{
+    display: flex;
+    justify-content: center;
+    text-justify: center;
+    text-align: center;
+    padding: 20px;
+    float: none;
+    /* bottom: 27px;
+    right: 20px; */
+  }
+  .footernav-wrap nav{
+    float: none;
+    text-align: center;
+    margin: 0;
+  }
+  .footernav-wrap li{
+    padding: 5px;
+  }
+  .footernav-wrap li:first-child{
+    padding-left: 22px;
+  }
+}
